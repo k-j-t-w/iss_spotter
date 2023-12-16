@@ -7,12 +7,12 @@ const printOverheadTimes = function(overheadTimes) {
     const duration = pass.duration;
     console.log(`Next pass at ${datetime} for ${duration} seconds!`);
   }
-}
+};
 
 nextISSTimesForMyLocation((error, overheadTimes) => {
   if (error) {
     return console.log("It didn't work!", error);
   }
   // success, print out the deets!
-  printOverheadTimes(overheadTimes)
+  printOverheadTimes(overheadTimes);
 });
